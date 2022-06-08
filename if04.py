@@ -12,4 +12,3 @@ def main(a,b):
     elif a > b:
         return a
     return b
-    
