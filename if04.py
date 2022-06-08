@@ -11,5 +11,4 @@ def main(a,b):
         return 0
     elif a > b:
         return a
-    else :
-        return b
+    return b
