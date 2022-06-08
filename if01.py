@@ -1,4 +1,4 @@
-def main(a,b,c):
+def mx(a,b,c):
     """
     Find the largest of the numbers.
     Args:
@@ -9,11 +9,9 @@ def main(a,b,c):
         int: return answer.
     """
     mx = a
-
     if mx < b:
         mx = b
         
     if mx < c:
         mx = c
-
     return mx
