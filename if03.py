@@ -1,5 +1,5 @@
-from if01 import mx
-from if02 import mn
+# from if01 import mx
+# from if02 import mn
 
 def main(a,b,c):
     """
@@ -11,11 +11,18 @@ def main(a,b,c):
     Returns:
         int: return answer.
     """
-    kt = mx(a,b,c)
-    kc = mn(a,b,c)
-    if kt == a and kc == c:
+
+    if a <= b <= c or a >= b >= c:
         return b
-    elif kt == b and kc == a:
-        return c
-    else :
+    elif b <= a <= c or b >= a >= c:
         return a
+    elif a <= c <= b or a >= c >= b:
+        return c
+    # kt = mx(a,b,c)
+    # kc = mn(a,b,c)
+    # if kt == a and kc == c:
+    #     return b
+    # elif kt == b and kc == a:
+    #     return c
+    # else :
+    #     return a
