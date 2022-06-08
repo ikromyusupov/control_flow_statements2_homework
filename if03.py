@@ -1,3 +1,6 @@
+from if01 import mx
+from if02 import mn
+
 def main(a,b,c):
     """
     Determine the number between large and small.
@@ -8,18 +11,11 @@ def main(a,b,c):
     Returns:
         int: return answer.
     """
-    mx = a
-    if mx < b:
-        mx = b        
-    if mx < c:
-        mx = c    
-        return mx
-    mn = a
-    if mn > b:
-        mn = b        
-    if mn > c:
-        mn = c
-        return mn
-    
-
-print(main(5,7,3))
+    kt = mx(a,b,c)
+    kc = mn(a,b,c)
+    if kt == a and kc == c:
+        return b
+    elif kt == b and kc == a:
+        return c
+    else :
+        return a
