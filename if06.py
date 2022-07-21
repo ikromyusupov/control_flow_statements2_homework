@@ -29,6 +29,6 @@ def main(n):
         ix = 4
     if mx < x5:
         mx = x5
-        ix = 4
+        ix = 5
     
     return ix
